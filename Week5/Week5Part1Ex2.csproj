@@ -44,10 +44,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimalHierachy.cs" />
+    <Compile Include="BaseClass\Animal.cs" />
+    <Compile Include="DerivedClasses\Cat.cs" />
+    <Compile Include="DerivedClasses\Dog.cs" />
+    <Compile Include="DerivedClasses\Frog.cs" />
+    <Compile Include="Interfaces + Enum\AnimalType.cs" />
+    <Compile Include="Interfaces + Enum\Gender.cs" />
+    <Compile Include="Interfaces + Enum\ISound.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransitiveClasses\Kitten.cs" />
+    <Compile Include="TransitiveClasses\Tomcat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
