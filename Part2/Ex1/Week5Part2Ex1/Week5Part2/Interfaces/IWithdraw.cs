@@ -8,6 +8,6 @@ namespace Week5Part2.Interfaces
 {
     public interface IWithdraw
     {
-        decimal WithdrawAmonut(decimal amount);
+        void WithDrawAmount(decimal withdrawedSum);
     }
 }

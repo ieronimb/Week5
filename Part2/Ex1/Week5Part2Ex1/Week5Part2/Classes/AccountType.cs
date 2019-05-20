@@ -48,9 +48,10 @@ namespace Week5Part2.Classes
         {
             return this.PassedMonths * this.InterestRate;
         }
+        //Metoda de afisare nume client, tip client, balanta, rata
         public override string ToString()
         {
-            return string.Format("Owner: {0}\nAccount type: {1}\nBalance:$ {2}\nInterest:$ {3} ",
+            return string.Format("\n------------------------------------\nOwner: {0}\nAccount type: {1}\nBalance:$ {2}\nInterest:$ {3} ",
                 this.Client.Name, this.GetType().Name, this.Balance, this.CalculateInterestAmount());
         }
     }

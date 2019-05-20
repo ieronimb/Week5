@@ -30,11 +30,11 @@ namespace Week5Part2.Classes
 
         //Metoda implementata de interfata IWithdraw. Aceasta interfata va fi contractata numai in Deposit class
         //Deposit accounts are allowed to deposit and with draw money.
-        //Loan and mortgage accounts can only deposit money.
+        //Loan and mortgage accounts can only deposit money.       
 
-        decimal IWithdraw.WithdrawAmonut(decimal amount)
+        public void WithDrawAmount(decimal withdrawedSum)
         {
-            return this.Balance -= amount;
-        }
+            this.Balance -= withdrawedSum;
+        }       
     }
 }

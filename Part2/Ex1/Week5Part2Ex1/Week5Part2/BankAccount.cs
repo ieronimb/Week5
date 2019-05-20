@@ -30,21 +30,45 @@ namespace Week5Part2
         {
             //Numele bancii
             Bank FirstBank = new Bank("BRDE");
+            Console.WriteLine(FirstBank);
 
+            //>>Depozit
             //Depozit cont sub 1000 (nu exista dobanda)
             Customer FirstCustomer = new Customer("Popescu Iulian", CustomerType.Individual);
-            Deposit FirstDeposit = new Deposit(FirstCustomer, 543, 12.5m, new DateTime(2018, 01, 01));
-            //Depozit cont peste 1000 (exista dobanda)
-            Customer SecondCustomer = new Customer("Iulia Popescu", CustomerType.Individual);
-            Deposit SecondDeposit = new Deposit(SecondCustomer, 1234, 12.5m, new DateTime(2018, 01, 01));
-            Console.WriteLine(FirstBank);
+            Deposit FirstDeposit = new Deposit(FirstCustomer, 980, 12.5m, new DateTime(2018, 01, 01));
             Console.WriteLine(FirstDeposit);
+            decimal depositAmount = 400m;
+            FirstDeposit.DepositAmount(depositAmount);
+            Console.WriteLine("After we deposited new amount:$ {0}, the new balance is:{1}",depositAmount, FirstDeposit);
+
+            //Depozit cont peste 1000 (exista dobanda)
+            Customer SecondCustomer = new Customer("SC SA", CustomerType.Company);
+            Deposit SecondDeposit = new Deposit(SecondCustomer, 1234, 12.5m, new DateTime(2018, 01, 01));           
             Console.WriteLine(SecondDeposit);
+            decimal wirthdraw = 400m;
+            FirstDeposit.WithDrawAmount(wirthdraw);
+            Console.WriteLine("After we deposited new amount:$ {0}, the new balance is:{1}", wirthdraw, SecondDeposit);
 
-            Customer ThirdCustomer = new Customer("SC SRL", CustomerType.Company);
-            Loan FirstMortgage = new Loan(ThirdCustomer, 345, 1.67m, new DateTime(2017, 05, 06));            
-            Console.WriteLine(FirstMortgage);            
+            //>>Loan
+            //Loan facut de recent (sub 2 sau 3 luni
+            Customer ThirdCustomer = new Customer("SC SNC", CustomerType.Company);
+            Loan FirstLoan = new Loan(ThirdCustomer, 43567, 2.00m, new DateTime(2019, 05, 06));            
+            Console.WriteLine(FirstLoan);
+            //Loan facut dupa 3 luni
+            Customer FourthCustomer = new Customer("Iulia Dumitrescu", CustomerType.Individual);
+            Loan SecondLoan = new Loan(FourthCustomer, 5467, 7.50m, new DateTime(2019, 01, 01));
+            Console.WriteLine(SecondLoan);
 
+            //>>Mortgage
+            //Mortgage dupa 12 luni
+            Customer SixthCustomer = new Customer("SC SNC", CustomerType.Company);
+            Mortgage FirstMortgage = new Mortgage(SixthCustomer, 1245, 4.65m, new DateTime(2017, 05, 06));
+            Console.WriteLine(FirstMortgage);
+            //Mortgage inainte de 6 luni
+            Customer SeventhCustomer = new Customer("Iulia Dumitrescu", CustomerType.Individual);
+            Mortgage SecondMortgage = new Mortgage(SeventhCustomer, 345, 10.67m, new DateTime(2019, 01, 01));
+            Console.WriteLine(SecondMortgage);
+      
             Console.ReadLine();
         }
     }

@@ -21,7 +21,7 @@ namespace Week5Part2.Classes
         }
         public override string ToString()
         {
-            return string.Format($"The bank's name is {this.bankNname}.");
+            return string.Format($"The bank's name is: {bankNname}");
         }
     }
     
