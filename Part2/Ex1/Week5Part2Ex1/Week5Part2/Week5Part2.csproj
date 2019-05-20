@@ -43,11 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BankAccount.cs" />
+    <Compile Include="Classes\AccountType.cs" />
+    <Compile Include="Classes\Bank.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Classes\Deposit.cs" />
+    <Compile Include="Classes\Loan.cs" />
+    <Compile Include="Classes\Mortgage.cs" />
+    <Compile Include="Enum\CustomerType.cs" />
+    <Compile Include="Interfaces\IDeposit.cs" />
+    <Compile Include="Interfaces\IWithdraw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
