@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{46B874A4-5728-4247-B96C-98612F74A0E5}</ProjectGuid>
+    <ProjectGuid>{9ECA873B-4483-4B67-B45A-EDBEA0FBE876}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Week5Part2</RootNamespace>
-    <AssemblyName>Week5Part2</AssemblyName>
+    <RootNamespace>Week5Part2Ex2</RootNamespace>
+    <AssemblyName>Week5Part2Ex2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAccount.cs" />
-    <Compile Include="Classes\AccountType.cs" />
-    <Compile Include="Classes\Bank.cs" />
+    <Compile Include="BusinessModel.cs" />
+    <Compile Include="Classes\Car.cs" />
     <Compile Include="Classes\Customer.cs" />
-    <Compile Include="Classes\Deposit.cs" />
-    <Compile Include="Classes\Loan.cs" />
-    <Compile Include="Classes\Mortgage.cs" />
-    <Compile Include="Enum\CustomerType.cs" />
-    <Compile Include="Interfaces\IDeposit.cs" />
-    <Compile Include="Interfaces\IWithdraw.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\Producer.cs" />
+    <Compile Include="Classes\Store.cs" />
+    <Compile Include="Interfaces\IOrder.cs" />
+    <Compile Include="Interfaces\IPerson.cs" />
+    <Compile Include="Interfaces\IProducer.cs" />
+    <Compile Include="Interfaces\IStore.cs" />
+    <Compile Include="Interfaces\IVehicle.cs" />
+    <Compile Include="Price.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="BankAccountDiag.cd" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
