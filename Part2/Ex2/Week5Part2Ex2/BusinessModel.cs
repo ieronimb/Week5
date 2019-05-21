@@ -30,18 +30,27 @@ namespace Week5Part2Ex2
             Car ForFocus = new Car("ForFocus");
             Store FordStore = new Store("FordStore");
             Store SkodaStore = new Store("SkodaStore");
-
             Order FourWeeks = new Order("4 weeks");
             Order ThreeWeeks = new Order("3 weeks");
 
-            newCustomer.Print(); ForFocus.Print(); Model.Print(); Console.Write($". He walked to the "); FordStore.Print();
-            Console.Write(" in Bucuresti and agreed to buy one for 15000Euro. They informed him it will take "); FourWeeks.Print();
-            Console.Write(" for delivery. He then decided to visit another store "); SkodaStore.Print(); Console.Write(" and agreed to buy one for 14000Euro and ");
-            ThreeWeeks.Print(); Console.Write(" delivery. He then canceled his original order from the ");FordStore.Print();
-            Console.Write(". After "); ThreeWeeks.Print(); Console.WriteLine(" he received the model.");
 
-
-
+            newCustomer.Print();
+            Console.Write(" intended to buy a ");
+            ForFocus.Print();
+            Model.Print();
+            Console.Write($". He walked to the ");
+            FordStore.Print();
+            Console.Write(" in Bucuresti and agreed to buy one for 15000Euro. They informed him it will take ");
+            FourWeeks.Print();
+            Console.Write(" for delivery. He then decided to visit another store ");
+            SkodaStore.Print();
+            Console.Write(" and agreed to buy one for 14000Euro and ");
+            ThreeWeeks.Print();
+            Console.Write(" delivery. He then canceled his original order from the ");
+            FordStore.Print();
+            Console.Write(". After ");
+            ThreeWeeks.Print();
+            Console.WriteLine(" he received the model.");
 
             Console.ReadLine();
         }        

@@ -20,8 +20,7 @@ namespace Week5Part2Ex2.Classes
 
         public void Print()
         {
-            Console.Write($"{Name} intended to buy a " +
-                $"");
+            Console.Write(Name);
         }
         //Metoda de la interfata
         string IPerson.Name()

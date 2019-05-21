@@ -19,7 +19,7 @@ namespace Week5Part2Ex2.Classes
 
         public void Print()
         {
-            Console.Write($"{Magazin} intended to buy a ");
+            Console.Write(Magazin);
         }
         //Metoda de la interfata        
         string IStore.Magazine()

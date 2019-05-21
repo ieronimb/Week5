@@ -11,21 +11,21 @@ namespace Week5Part2Ex2.Classes
     class Producer : IProducer
     {
         //Constructori
-        public Producer(string manufacutrer)
+        public Producer(string manufacturer)
         {
-            this.Manufacutrer = manufacutrer;
+            this.Manufacturer = manufacturer;
         }
         //Proprietati
-        public string Manufacutrer { get; set; }
+        public string Manufacturer { get; set; }
 
         public void Print()
         {
-            Console.Write(Manufacutrer);
+            Console.Write(Manufacturer);
         }
         //Metoda de la interfata        
-        string IProducer.Manufacutrer()
+        string IProducer.Manufacturer()
         {
-            return Manufacutrer;
+            return Manufacturer;
         }
     }
 }

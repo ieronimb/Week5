@@ -8,27 +8,23 @@ using Week5Part2Ex2.Interfaces;
 namespace Week5Part2Ex2.Classes
 {
     class Order : IOrder
-    {   
-        //Campuri
-        private string weeks;        
-        //Constructor
+    {    //Constructori       
+        
         public Order(string weeks)
         {
-            this.weeks = weeks;            
+            this.Weeks = weeks;
         }
         //Proprietati
-        public string Weeks { get; private set; }       
-
-        //Metode din interfete           
-
-        string IOrder.Weeks()
-        {
-            return Weeks;
-        }
+        public string Weeks { get; private set; }
 
         public void Print()
         {
             Console.Write(Weeks);
-        }        
+        }
+        //Metoda de la interfata        
+        string IOrder.Weeks()
+        {
+            return Weeks;
+        }
     }
 }

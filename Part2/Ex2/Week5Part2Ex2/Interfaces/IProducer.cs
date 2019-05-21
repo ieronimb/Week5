@@ -8,7 +8,7 @@ namespace Week5Part2Ex2.Interfaces
 {
      interface IProducer
      {
-        string Manufacutrer();
+        string Manufacturer();
 
     }
 }
