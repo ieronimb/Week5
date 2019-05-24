@@ -51,7 +51,7 @@
     <Compile Include="Interfaces\IPerson.cs" />
     <Compile Include="Interfaces\IStore.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="BusinessModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
