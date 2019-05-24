@@ -11,7 +11,7 @@ namespace BusinessModel.Classes
     {
         private List<IOrder> orders = new List<IOrder>();
         public string Name { get; }       
-
+        
         public Store(string name)
         {
             Name = name;
@@ -74,5 +74,6 @@ namespace BusinessModel.Classes
         {
             order.Received();
         }
+        
     }
 }

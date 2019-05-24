@@ -54,7 +54,6 @@
     <Compile Include="Interfaces\IProducer.cs" />
     <Compile Include="Interfaces\IStore.cs" />
     <Compile Include="Interfaces\IVehicle.cs" />
-    <Compile Include="Price.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
